@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css" media="screen">
+        <title>Forms</title>
+    </head>
+
+    <body>  
+        <div>
+            <h1 class="title">Cadastro de DEVs</h1>
+            <p class="subtitle">Complete suas informações</p>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="group">
+                <div class="field">
+                    <label for="firstname"><strong>Nome</strong></label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="field">
+                    <label for="lastname"><strong>Sobrenome</strong></label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+            </fieldset> 
+
+            <div class="field">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="field">
+                <label><strong>Qual a sua stack?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" >Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack" checked>Fullstack
+                </label>
+            </div>
+
+            <div class="field">
+                <label for="senioridade"><strong>Qual a sua senioridade</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Júnior</option>
+                  <option>Pleno</option>
+                  <option>Sênior</option>
+                  <option>Master</option>
+                  <option>Letícia Bora</option>
+                </select>
+            </div>
+
+            <fieldset class="group">
+                <div>
+                    <label><strong>Quais linguagens já utilizou?</strong></label><br><br>
+                    <input type="checkbox" id="tech1" name="tech1" value="html5">
+                    <label for="tech1"> HTML5</label>
+                    <input type="checkbox" id="tech2" name="tech2" value="css3">
+                    <label for="tech2"> CSS3</label>
+                    <input type="checkbox" id="tech3" name="tech3" value="JavaScript">
+                    <label for="tech3"> JavaScript</label>
+                    <input type="checkbox" id="tech4" name="tech4" value="react">
+                    <label for="tech4"> React do Djanho</label>
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <br>
+                <label for="experience"><strong>Conte um pouco sobre a sua experiência: </strong></label>
+                <textarea rows="6" style="resize: none" id="experience" name="experience"></textarea>
+            </div>
+
+            <button class="btn" type="submit" onsubmit="">Concluído</button>            
+        </form>
+    </body>
+</html>
